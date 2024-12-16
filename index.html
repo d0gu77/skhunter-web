@@ -32,9 +32,21 @@
             margin-top: 80px;
         }
         img {
+            margin: 20px 0;
+        }
+        .logo {
             width: 150px;
             height: auto;
-            margin: 20px 0;
+        }
+        .screenshots {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .screenshots img {
+            width: 300px;
+            height: auto;
         }
         h1 {
             font-size: 36px;
@@ -50,7 +62,7 @@
         </nav>
     </header>
     <main>
-        <img src="logo.png" alt="Logo">
+        <img src="logo.png" alt="Logo" class="logo">
         <h1>Skhunter is a Debian-based Linux distribution</h1>
         <p>It works only on the live system and is equipped for user security. The necessary tools for penetration testing, which is its main purpose, have been installed.</p>
         <h1>Skhunter Linux 1.0</h1>
@@ -61,7 +73,10 @@
         <h1>Team</h1>
         <p>d0gu77 - project leader, developer</p>
         <h1>Screenshots</h1>
-        <img src="gnome.png" alt="Gnome">
+        <div class="screenshots">
+            <img src="gnome.png" alt="Gnome">
+            <img src="neofetch.png" alt="Neofetch">
+        </div>
     </main>
 </body>
 </html>
